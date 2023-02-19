@@ -21,8 +21,8 @@
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $userEmail = sanitiseData($_POST['InputEmail']);
-    $userMessage = sanitiseData($_POST['InputMessage']);
+    $userEmail = sanitiseData($_POST['inputEmail']);
+    $userMessage = sanitiseData($_POST['inputMessage']);
 
 
 
