@@ -24,6 +24,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $userEmail = sanitiseData($_POST['inputEmail']);
     $userMessage = sanitiseData($_POST['inputMessage']);
 
+    $sqlStmt = $conn->prepare("INSERT INTO Contact (ContactEmail, Message) VALUES (:ContactEmail, :Message)");
+
 
 
     $formError = false;

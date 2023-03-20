@@ -35,7 +35,7 @@
                     <!--Product List-->
                     <p>Please enter the quantities of each product:</p>
                     <label for="orderProduct1" class="form-label"><?php echo $productNames["product1""]; ?> </label>
-                    <input type="number" class="form-control" id="orderProduct1" name="orderProduct1"
+                    <input type="number" class="form-control"id="orderProduct1" name="orderProduct1"
                            value="0">
                     <label for="orderProduct2" class="form-label"><?php echo $productNames["product2"]; ?> </label>
                     <input type="number" class="form-control" id="orderProduct2" name="orderProduct2"
