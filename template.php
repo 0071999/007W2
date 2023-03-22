@@ -30,7 +30,7 @@
 
 session_start();
 
-$con = new SQLite3( filename: "DB") or die("Unable to open database");
+$conn = new SQLite3(  "DB") or die("Unable to open database");
 
 
 $productNames = array("product1"=>"Darth Vader Helmet", "product2"=>"Grogu Plush", "product3"=>"ROTJ Jigsaw", "product4"=>"Aftermath", "product5"=>"Alphabet Squadron");

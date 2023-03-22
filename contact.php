@@ -1,5 +1,6 @@
 <!doctype html>
-<?php include "template.php" ?>
+<?php include "template.php"
+/** @var $conn */?>
 <html lang="en">
 </head>
 <body>
