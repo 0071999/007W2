@@ -1,5 +1,7 @@
 <?php include "template.php"
-    /** @var $productNames */ ?>
+    /** @var $productNames */
+/** @var $conn */ ?>
+
     <title>Order Form</title>
 <body>
 
@@ -56,6 +58,17 @@
         <input type="submit" name="formSubmit" value="Submit">
     </form>
 </div>
+<?
+{
+//write to db
+$OrderNumber = "1"; // TODO : Fix to generate new one.
+$customerID = "1"; // TODO: Fix to load current customerID
+$productID = 5; //TODO: Load Dynamically
 
-
-
+$sqlStmt = $conn->prepare("INSERT INTO Orders (OrderID, OrderNumber, CustomerID, ProductID, Quantity) VALUES (:OrderNumber, :CustomerID, :ProductID, :Quantity)
+   $sqlStmt->bindParam( 'OrderNumber', "o1");
+   $sqlStmt->bindParam( 'CustomerID', "1");
+   $sqlStmt->bindParam( 'ProductID', "5");
+   $sqlStmt->bindParam( 'Quantity', $productQuantity5);
+$sqlStmt->execute();
+    }
