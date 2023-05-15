@@ -1,5 +1,5 @@
 <?php include "template.php";
-/** @var $conn; */
+/** @var $conn */
 ?>
     <title>User Registration</title>
 <h1 class='text-primary'>User Registration</h1>
