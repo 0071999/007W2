@@ -60,6 +60,7 @@ $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
     $sqlStmt->bindParam( 'Address', $address);
     $sqlStmt->bindParam( 'PhoneNumber', $phoneNumber);
     $sqlStmt->execute();
+    $_SESSION["flash_message"] = "<div class='bg-success'>User Registration successful.</div>";
 }
 }
 ?>

@@ -11,7 +11,14 @@ Users will need to store:
 - Name
 - D.O.B
 - Hashed Password
-- 
+- Access Level (user vs Administrator)
+- Status (active or disabled)
+- Product Management 
+- Administrators will be able to add, remove, edit products.
+
+Products will have:
+
+
 
 ## Product Management
 
